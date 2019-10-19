@@ -16,3 +16,9 @@
     border-color: $secondary;
     border-width: 2px;
 }
+
+@include media-breakpoint-down(sm) {
+    body {
+        font-size: $font-size-base *.875;;
+    }
+}
