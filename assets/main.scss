@@ -4,10 +4,15 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
-.content {
-    font-size: $custom-font-size; //using custom variable 
+.bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
 }
-
-.primarycolor{
-    color: $primary; //using Bootstrap variable
+.bg-trans {
+    background-color: rgba(#ffffff, 0.85)
+}
+.hr-theme {
+    border-color: $secondary;
+    border-width: 2px;
 }
