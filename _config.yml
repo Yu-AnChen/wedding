@@ -10,3 +10,4 @@ exclude:
   - package.json
   - package-lock.json
   - yarn.lock
+google_analytics: UA-150737787-1
