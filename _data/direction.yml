@@ -12,4 +12,4 @@
 
     - 共乘計程車：請使用下面的聊天室揪捷運新店站共乘
 
-    <div id="tlkio" data-channel="taxi-pool" style="width:100%;height:400px;" class="p-4"></div><script async src="http://tlk.io/embed.js" type="text/javascript"></script>
+    <div id="tlkio" data-channel="taxi-pool" style="width:100%;height:400px;" class="p-4"></div><script async src="https://tlk.io/embed.js" type="text/javascript"></script>
