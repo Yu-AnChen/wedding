@@ -1,0 +1,49 @@
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+            aria-selected="true">交通</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+            aria-selected="false">餐點</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+            aria-selected="false">流程</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active mt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+        {% assign direction=site.data.direction %}
+            {% for method in direction %}
+            <p>{{ method[0] }}</p>
+            {{method[1] | markdownify}}
+        {% endfor %}
+    </div>
+    <div class="tab-pane fade text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <div class="row">
+        {% assign menu=site.data.menu %}
+        {% for type in menu %}
+        <div class="col-6">
+        <p class="mt-5 font-weight-bold">
+            {{ type[0] }}
+        </p>
+        {% for menuHash in type[1] %}
+        {% for dish in menuHash %}
+        <p>{{ dish[0] }}</p>
+        {% endfor %}
+        {% endfor %}
+        </div>
+        {% endfor %}
+        </div>
+    </div>
+    <div class="tab-pane fade mt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+        {% assign schedule=site.data.schedule %}
+        {% for event in schedule %}
+        <div class="row my-2">
+            <div class="col-5 text-right">{{ event[0] }}</div>
+            <div class="col-7">{{ event[1] }}</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
