@@ -10,6 +10,6 @@
 
     - 離開優聖美地：建議以 [55688 APP](https://www.taiwantaxi.com.tw/Article?fid=5&sid=62&tid=103){: .text-warning} 叫車至捷運新店站
 
-    - 共乘計程車：請使用下面的聊天室（或這個[連結](https://tlk.io/taxi-pool)）揪捷運新店站共乘
+    - 共乘計程車：請使用下面的聊天室（或[這個連結](https://tlk.io/taxi-pool){: .text-warning}）揪捷運新店站共乘
 
-    <div id="tlkio" data-channel="taxi-pool" style="width:100%;height:400px;" class="p-4"></div><script async src="https://tlk.io/embed.js" type="text/javascript"></script>
+    <div id="tlkio" data-channel="taxi-pool" style="width:100%;height:500px;" class="p-4"></div><script async src="https://tlk.io/embed.js" type="text/javascript"></script>
